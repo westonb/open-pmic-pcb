@@ -1,0 +1,301 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L wbraun_ic_lib:LMH6601 U?
+U 1 1 61A130A2
+P 2950 3800
+F 0 "U?" H 3100 3950 50  0000 L CNN
+F 1 "LMH6601" H 3150 3650 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 3050 3550 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmh6612.pdf" H 3100 3950 50  0001 C CNN
+	1    2950 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A13740
+P 1850 4500
+F 0 "R?" H 1920 4546 50  0000 L CNN
+F 1 "1k" H 1920 4455 50  0000 L CNN
+F 2 "" V 1780 4500 50  0001 C CNN
+F 3 "~" H 1850 4500 50  0001 C CNN
+	1    1850 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A13D16
+P 1850 4950
+F 0 "R?" H 1920 4996 50  0000 L CNN
+F 1 "1k" H 1920 4905 50  0000 L CNN
+F 2 "" V 1780 4950 50  0001 C CNN
+F 3 "~" H 1850 4950 50  0001 C CNN
+	1    1850 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61A14161
+P 2300 5000
+F 0 "C?" H 2415 5046 50  0000 L CNN
+F 1 "0.1u" H 2415 4955 50  0000 L CNN
+F 2 "" H 2338 4850 50  0001 C CNN
+F 3 "~" H 2300 5000 50  0001 C CNN
+	1    2300 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61A14995
+P 4050 3000
+F 0 "C?" H 4165 3046 50  0000 L CNN
+F 1 "4.7u" H 4165 2955 50  0000 L CNN
+F 2 "" H 4088 2850 50  0001 C CNN
+F 3 "~" H 4050 3000 50  0001 C CNN
+	1    4050 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A14E3A
+P 2900 3300
+F 0 "R?" V 2693 3300 50  0000 C CNN
+F 1 "R" V 2784 3300 50  0000 C CNN
+F 2 "" V 2830 3300 50  0001 C CNN
+F 3 "~" H 2900 3300 50  0001 C CNN
+	1    2900 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61A15354
+P 2900 2900
+F 0 "C?" V 2648 2900 50  0000 C CNN
+F 1 "C" V 2739 2900 50  0000 C CNN
+F 2 "" H 2938 2750 50  0001 C CNN
+F 3 "~" H 2900 2900 50  0001 C CNN
+	1    2900 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A168C1
+P 2850 4200
+F 0 "#PWR?" H 2850 3950 50  0001 C CNN
+F 1 "GND" H 2855 4027 50  0000 C CNN
+F 2 "" H 2850 4200 50  0001 C CNN
+F 3 "" H 2850 4200 50  0001 C CNN
+	1    2850 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4100 2850 4200
+Wire Wire Line
+	2950 4100 3100 4100
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 61A17330
+P 3100 4100
+F 0 "#PWR?" H 3100 3950 50  0001 C CNN
+F 1 "+3.3VA" V 3115 4228 50  0000 L CNN
+F 2 "" H 3100 4100 50  0001 C CNN
+F 3 "" H 3100 4100 50  0001 C CNN
+	1    3100 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 61A17BE8
+P 2900 3500
+F 0 "#PWR?" H 2900 3350 50  0001 C CNN
+F 1 "+3.3VA" V 2915 3628 50  0000 L CNN
+F 2 "" H 2900 3500 50  0001 C CNN
+F 3 "" H 2900 3500 50  0001 C CNN
+	1    2900 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 3500 2900 3500
+Wire Wire Line
+	3050 3300 3450 3300
+Wire Wire Line
+	3450 3300 3450 3800
+Wire Wire Line
+	3450 3800 3250 3800
+Wire Wire Line
+	3050 2900 3450 2900
+Wire Wire Line
+	3450 2900 3450 3300
+Connection ~ 3450 3300
+Wire Wire Line
+	2750 3300 2400 3300
+Wire Wire Line
+	2400 3300 2400 3700
+Wire Wire Line
+	2400 3700 2650 3700
+Wire Wire Line
+	2750 2900 2400 2900
+Wire Wire Line
+	2400 2900 2400 3300
+Connection ~ 2400 3300
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 61A19E21
+P 4050 2800
+F 0 "#PWR?" H 4050 2650 50  0001 C CNN
+F 1 "+3.3VA" H 4065 2973 50  0000 C CNN
+F 2 "" H 4050 2800 50  0001 C CNN
+F 3 "" H 4050 2800 50  0001 C CNN
+	1    4050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A1A5F5
+P 4050 3200
+F 0 "#PWR?" H 4050 2950 50  0001 C CNN
+F 1 "GND" H 4055 3027 50  0000 C CNN
+F 2 "" H 4050 3200 50  0001 C CNN
+F 3 "" H 4050 3200 50  0001 C CNN
+	1    4050 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2800 4050 2850
+Wire Wire Line
+	4050 3150 4050 3200
+Wire Wire Line
+	1850 5100 1850 5250
+Wire Wire Line
+	1850 5250 2300 5250
+Wire Wire Line
+	2300 5250 2300 5150
+$Comp
+L power:GND #PWR?
+U 1 1 61A1B12C
+P 1850 5250
+F 0 "#PWR?" H 1850 5000 50  0001 C CNN
+F 1 "GND" H 1855 5077 50  0000 C CNN
+F 2 "" H 1850 5250 50  0001 C CNN
+F 3 "" H 1850 5250 50  0001 C CNN
+	1    1850 5250
+	1    0    0    -1  
+$EndComp
+Connection ~ 1850 5250
+Wire Wire Line
+	1850 4650 1850 4750
+Wire Wire Line
+	1850 4750 2300 4750
+Wire Wire Line
+	2300 4750 2300 4850
+Connection ~ 1850 4750
+Wire Wire Line
+	1850 4750 1850 4800
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 61A1BAC3
+P 1850 4300
+F 0 "#PWR?" H 1850 4150 50  0001 C CNN
+F 1 "+3.3VA" H 1865 4473 50  0000 C CNN
+F 2 "" H 1850 4300 50  0001 C CNN
+F 3 "" H 1850 4300 50  0001 C CNN
+	1    1850 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 4300 1850 4350
+Wire Wire Line
+	2300 4750 2300 3900
+Wire Wire Line
+	2300 3900 2650 3900
+Connection ~ 2300 4750
+Text Label 2300 4750 0    50   ~ 0
+TIA_VREF
+$Comp
+L Device:R R?
+U 1 1 61A1CC7D
+P 1950 2900
+F 0 "R?" V 1743 2900 50  0000 C CNN
+F 1 "DNP" V 1834 2900 50  0000 C CNN
+F 2 "" V 1880 2900 50  0001 C CNN
+F 3 "~" H 1950 2900 50  0001 C CNN
+	1    1950 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61A1D8A3
+P 1950 3300
+F 0 "C?" V 1698 3300 50  0000 C CNN
+F 1 "DNP" V 1789 3300 50  0000 C CNN
+F 2 "" H 1988 3150 50  0001 C CNN
+F 3 "~" H 1950 3300 50  0001 C CNN
+	1    1950 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 3300 2400 3300
+Wire Wire Line
+	2100 2900 2400 2900
+Connection ~ 2400 2900
+$Comp
+L power:GND #PWR?
+U 1 1 61A1E556
+P 1650 3300
+F 0 "#PWR?" H 1650 3050 50  0001 C CNN
+F 1 "GND" V 1655 3172 50  0000 R CNN
+F 2 "" H 1650 3300 50  0001 C CNN
+F 3 "" H 1650 3300 50  0001 C CNN
+	1    1650 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 3300 1750 3300
+Wire Wire Line
+	1800 2900 1750 2900
+Wire Wire Line
+	1750 2900 1750 3300
+Connection ~ 1750 3300
+Wire Wire Line
+	1750 3300 1800 3300
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 61A1FAB6
+P 4350 3900
+F 0 "J?" H 4322 3782 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 4322 3873 50  0000 R CNN
+F 2 "" H 4350 3900 50  0001 C CNN
+F 3 "~" H 4350 3900 50  0001 C CNN
+	1    4350 3900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3450 3800 4150 3800
+Connection ~ 3450 3800
+Text Label 4050 4050 2    50   ~ 0
+TIA_VREF
+Wire Wire Line
+	4050 4050 4150 4050
+Wire Wire Line
+	4150 4050 4150 3900
+Wire Wire Line
+	2400 3700 1950 3700
+Connection ~ 2400 3700
+Text Label 3700 3800 0    50   ~ 0
+TIA_SENSE
+Text GLabel 1950 3700 0    50   Input ~ 0
+IMON
+$EndSCHEMATC

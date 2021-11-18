@@ -1,0 +1,112 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 61AE113C
+P 4450 3200
+F 0 "R?" H 4520 3246 50  0000 L CNN
+F 1 "R" H 4520 3155 50  0000 L CNN
+F 2 "" V 4380 3200 50  0001 C CNN
+F 3 "~" H 4450 3200 50  0001 C CNN
+	1    4450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61AE182C
+P 4850 3200
+F 0 "R?" H 4920 3246 50  0000 L CNN
+F 1 "R" H 4920 3155 50  0000 L CNN
+F 2 "" V 4780 3200 50  0001 C CNN
+F 3 "~" H 4850 3200 50  0001 C CNN
+	1    4850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61AE1FEA
+P 5250 3200
+F 0 "R?" H 5320 3246 50  0000 L CNN
+F 1 "R" H 5320 3155 50  0000 L CNN
+F 2 "" V 5180 3200 50  0001 C CNN
+F 3 "~" H 5250 3200 50  0001 C CNN
+	1    5250 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61AE2759
+P 4450 4100
+F 0 "#PWR?" H 4450 3850 50  0001 C CNN
+F 1 "GND" H 4455 3927 50  0000 C CNN
+F 2 "" H 4450 4100 50  0001 C CNN
+F 3 "" H 4450 4100 50  0001 C CNN
+	1    4450 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4100 4450 4000
+Text GLabel 4400 2650 0    50   Input ~ 0
+BUCK_VOUT
+Wire Wire Line
+	4400 2650 4450 2650
+Wire Wire Line
+	4450 2650 4450 2900
+Wire Wire Line
+	4450 2900 4850 2900
+Wire Wire Line
+	4850 2900 4850 3050
+Connection ~ 4450 2900
+Wire Wire Line
+	4450 2900 4450 3050
+Wire Wire Line
+	4850 2900 5250 2900
+Wire Wire Line
+	5250 2900 5250 3050
+Connection ~ 4850 2900
+Wire Wire Line
+	4450 3350 4450 3500
+Wire Wire Line
+	4850 3350 4850 3500
+Wire Wire Line
+	4850 3500 4450 3500
+Connection ~ 4450 3500
+Wire Wire Line
+	4450 3500 4450 3600
+Wire Wire Line
+	5250 3350 5250 3500
+Wire Wire Line
+	5250 3500 4850 3500
+Connection ~ 4850 3500
+Text GLabel 4000 3800 0    50   Input ~ 0
+LOAD_SW
+Wire Wire Line
+	4000 3800 4150 3800
+$Comp
+L Device:Q_NMOS_GSD Q?
+U 1 1 61EA619F
+P 4350 3800
+AR Path="/61AE0010/61EA619F" Ref="Q?"  Part="1" 
+AR Path="/61EA619F" Ref="Q?"  Part="1" 
+F 0 "Q?" H 4555 3846 50  0000 L CNN
+F 1 "BSR202N" H 4555 3755 50  0000 L CNN
+F 2 "" H 4550 3900 50  0001 C CNN
+F 3 "~" H 4350 3800 50  0001 C CNN
+F 4 "BSR202NL6327HTSA1" H 4350 3800 50  0001 C CNN "MPN"
+	1    4350 3800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
