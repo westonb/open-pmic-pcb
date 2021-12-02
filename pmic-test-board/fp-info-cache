@@ -1,4 +1,4 @@
-19722264534638567
+19727179709209567
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83825,6 +83825,13 @@ capacitor tantalum
 2
 2
 wbraun_smd
+CST2010
+
+
+0
+12
+12
+wbraun_smd
 C_0402
 Capacitor SMD 0402, reflow soldering, AVX (see smccp.pdf)
 capacitor 0402
@@ -84090,6 +84097,13 @@ FX10B_80S_8_SV
 0
 92
 90
+wbraun_smd
+Fuse_3912
+
+
+0
+2
+2
 wbraun_smd
 G2RL-2
 
@@ -84682,6 +84696,13 @@ wbraun_smd
 SER1052
 
 
+0
+3
+2
+wbraun_smd
+SER2918H
+inductor
+inductor
 0
 3
 2
