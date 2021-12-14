@@ -1,4 +1,4 @@
-19727179709209567
+19732119414689567
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -84308,6 +84308,13 @@ inductor
 2
 2
 wbraun_smd
+L_Wuerth_WE-PD-Typ-7345
+Shielded Power Inductor, Wuerth Elektronik, WE-PD, SMD, 7345, https://katalog.we-online.com/pbs/datasheet/744777001.pdf
+Choke Shielded Power Inductor WE-PD 7345 Wuerth
+0
+2
+2
+wbraun_smd
 M3-mounting-hole-insulated
 
 
@@ -84658,6 +84665,13 @@ resistor 0603
 2
 2
 wbraun_smd
+R_Shunt_Ohmite_LVK12
+4 contact shunt resistor
+shunt resistor 4 contacts
+0
+4
+4
+wbraun_smd
 R_Shunt_Ohmite_LVK25
 4 contacts shunt resistor,https://www.ohmite.com/assets/docs/res_lvk.pdf
 4 contacts resistor smd
@@ -84825,6 +84839,13 @@ switch SPDT
 0
 5
 4
+wbraun_smd
+SW_SPST_PTS810
+C&K Components, PTS 810 Series, Microminiature SMT Top Actuated, http://www.ckswitches.com/media/1476/pts810.pdf
+SPST Button Switch
+0
+4
+2
 wbraun_smd
 SW_Tactile_SPST_Angled_PTS645Vx58-2LFS
 tactile switch SPST right angle, PTS645VL58-2 LFS

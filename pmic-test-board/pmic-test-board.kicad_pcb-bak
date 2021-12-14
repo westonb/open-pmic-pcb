@@ -8243,7 +8243,7 @@
   (gr_text "NMOS CTRL" (at 115.25 140 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "Open PMIC Test Board\nwdb@stanford.edu" (at 110.75 132.75) (layer F.SilkS)
+  (gr_text "OPEN PMIC Test Board\nwdb@stanford.edu" (at 110.75 132.75) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "OC EN" (at 181.75 63.75) (layer F.SilkS)

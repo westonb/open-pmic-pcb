@@ -219,7 +219,7 @@ Wire Wire Line
 	5800 1700 6100 1700
 Connection ~ 5800 1700
 Wire Wire Line
-	6400 1700 6650 1700
+	6400 1700 6500 1700
 Wire Wire Line
 	6650 1700 6650 1750
 $Comp
@@ -319,82 +319,12 @@ F 3 "" H 6650 3250 50  0001 C CNN
 $EndComp
 Connection ~ 6650 3250
 $Comp
-L power:+3.3VA #PWR0168
-U 1 1 619F0A4D
-P 7800 3250
-F 0 "#PWR0168" H 7800 3100 50  0001 C CNN
-F 1 "+3.3VA" H 7815 3423 50  0000 C CNN
-F 2 "" H 7800 3250 50  0001 C CNN
-F 3 "" H 7800 3250 50  0001 C CNN
-	1    7800 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R205
-U 1 1 619F2073
-P 7250 3250
-F 0 "R205" V 7043 3250 50  0000 C CNN
-F 1 "0.1" V 7134 3250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7180 3250 50  0001 C CNN
-F 3 "~" H 7250 3250 50  0001 C CNN
-	1    7250 3250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C212
-U 1 1 619F26C8
-P 7800 3500
-F 0 "C212" H 7915 3546 50  0000 L CNN
-F 1 "10u" H 7915 3455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7838 3350 50  0001 C CNN
-F 3 "~" H 7800 3500 50  0001 C CNN
-	1    7800 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7100 3250 7000 3250
-Wire Wire Line
-	7000 3250 7000 2900
-Wire Wire Line
-	5750 2900 5750 3250
-$Comp
-L power:GND #PWR0169
-U 1 1 619F5DAE
-P 7800 3800
-F 0 "#PWR0169" H 7800 3550 50  0001 C CNN
-F 1 "GND" H 7805 3627 50  0000 C CNN
-F 2 "" H 7800 3800 50  0001 C CNN
-F 3 "" H 7800 3800 50  0001 C CNN
-	1    7800 3800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 3650 7800 3800
-Wire Wire Line
-	7800 3350 7800 3250
-Connection ~ 7800 3250
-Wire Wire Line
-	1900 1700 2450 1700
-Text GLabel 1900 1700 0    50   Input ~ 0
-VIN_CONTROL
-$Comp
-L Connector:Conn_01x02_Male J206
-U 1 1 619F9A41
-P 7200 3650
-F 0 "J206" V 7000 3600 50  0000 L CNN
-F 1 "Conn_01x02_Male" V 7100 3350 50  0000 L CNN
-F 2 "" H 7200 3650 50  0001 C CNN
-F 3 "~" H 7200 3650 50  0001 C CNN
-	1    7200 3650
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Connector:Conn_01x02_Male J204
 U 1 1 619FBD4B
 P 6200 3650
 F 0 "J204" V 6000 3600 50  0000 L CNN
 F 1 "Conn_01x02_Male" V 6100 3350 50  0000 L CNN
-F 2 "" H 6200 3650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6200 3650 50  0001 C CNN
 F 3 "~" H 6200 3650 50  0001 C CNN
 	1    6200 3650
 	0    -1   -1   0   
@@ -405,7 +335,7 @@ U 1 1 619FC47A
 P 6200 2100
 F 0 "J203" V 6000 2050 50  0000 L CNN
 F 1 "Conn_01x02_Male" V 6100 1800 50  0000 L CNN
-F 2 "" H 6200 2100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6200 2100 50  0001 C CNN
 F 3 "~" H 6200 2100 50  0001 C CNN
 	1    6200 2100
 	0    -1   -1   0   
@@ -430,22 +360,6 @@ Wire Wire Line
 Wire Wire Line
 	6100 3450 6100 3250
 Connection ~ 6100 3250
-Wire Wire Line
-	7200 3450 7100 3450
-Wire Wire Line
-	7100 3450 7100 3250
-Connection ~ 7100 3250
-Wire Wire Line
-	7300 3450 7400 3450
-Wire Wire Line
-	7400 3450 7400 3250
-Wire Wire Line
-	7400 3250 7800 3250
-Connection ~ 7400 3250
-Wire Wire Line
-	7000 2900 5750 2900
-Text GLabel 2650 5400 0    50   Input ~ 0
-VIN_POWER
 $Comp
 L Device:C C203
 U 1 1 61A4760E
@@ -468,8 +382,6 @@ F 3 "" H 3950 5950 50  0001 C CNN
 	1    3950 5950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2650 5400 3050 5400
 Wire Wire Line
 	3250 5400 3400 5400
 Wire Wire Line
@@ -511,7 +423,7 @@ U 1 1 61A51E72
 P 4350 5800
 F 0 "J202" V 4150 5750 50  0000 L CNN
 F 1 "Conn_01x02_Male" V 4250 5500 50  0000 L CNN
-F 2 "" H 4350 5800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4350 5800 50  0001 C CNN
 F 3 "~" H 4350 5800 50  0001 C CNN
 	1    4350 5800
 	0    -1   -1   0   
@@ -527,7 +439,7 @@ U 1 1 61A56CBE
 P 6300 5750
 F 0 "J205" V 6100 5700 50  0000 L CNN
 F 1 "Conn_01x02_Male" V 6200 5450 50  0000 L CNN
-F 2 "" H 6300 5750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6300 5750 50  0001 C CNN
 F 3 "~" H 6300 5750 50  0001 C CNN
 	1    6300 5750
 	0    -1   -1   0   
@@ -563,42 +475,18 @@ F 3 "" H 6750 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6500 5350 6750 5350
+	6500 5350 6650 5350
 Wire Wire Line
 	6750 5350 6750 5500
 Wire Wire Line
 	6750 5800 6750 5900
 Text GLabel 4800 5400 2    50   Input ~ 0
 BUCK_PWR
-$Comp
-L Connector:Conn_01x02_Male J201
-U 1 1 61A600E3
-P 3750 4750
-F 0 "J201" V 3550 4700 50  0000 L CNN
-F 1 "Conn_01x02_Male" V 3650 4450 50  0000 L CNN
-F 2 "" H 3750 4750 50  0001 C CNN
-F 3 "~" H 3750 4750 50  0001 C CNN
-	1    3750 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0172
-U 1 1 61A61C00
-P 3650 5050
-F 0 "#PWR0172" H 3650 4800 50  0001 C CNN
-F 1 "GND" H 3655 4877 50  0000 C CNN
-F 2 "" H 3650 5050 50  0001 C CNN
-F 3 "" H 3650 5050 50  0001 C CNN
-	1    3650 5050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3750 4950 3750 5050
 Wire Wire Line
 	3750 5050 3950 5050
 Connection ~ 3950 5050
-Wire Wire Line
-	3650 4950 3650 5050
 Text GLabel 6750 5350 2    50   Input ~ 0
 CTRL_PWR
 $Comp
@@ -697,7 +585,7 @@ U 1 1 61C51AE5
 P 4400 5400
 F 0 "R201" V 4175 5400 50  0000 C CNN
 F 1 "10m" V 4266 5400 50  0000 C CNN
-F 2 "Resistor_SMD:R_Shunt_Ohmite_LVK12" V 4330 5400 50  0001 C CNN
+F 2 "wbraun_smd:R_Shunt_Ohmite_LVK12" V 4330 5400 50  0001 C CNN
 F 3 "~" H 4400 5400 50  0001 C CNN
 F 4 "LVK12R010CER" V 4400 5400 50  0001 C CNN "MPN"
 	1    4400 5400
@@ -706,9 +594,132 @@ $EndComp
 Wire Wire Line
 	3950 5400 4200 5400
 Wire Wire Line
-	4600 5400 4800 5400
+	4600 5400 4700 5400
 Wire Wire Line
 	4500 5600 4500 5550
 Wire Wire Line
 	4300 5600 4300 5550
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 6218656E
+P 1550 1800
+AR Path="/6218656E" Ref="J?"  Part="1" 
+AR Path="/6198672D/6218656E" Ref="J207"  Part="1" 
+F 0 "J207" H 1442 1475 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 1442 1566 50  0000 C CNN
+F 2 "wbraun_smd:Terminal-block-plug_2x1_3.5mm-pitch" H 1550 1800 50  0001 C CNN
+F 3 "~" H 1550 1800 50  0001 C CNN
+	1    1550 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1750 1700 2450 1700
+$Comp
+L power:GND #PWR0235
+U 1 1 6218AF6E
+P 1850 1850
+F 0 "#PWR0235" H 1850 1600 50  0001 C CNN
+F 1 "GND" H 1855 1677 50  0000 C CNN
+F 2 "" H 1850 1850 50  0001 C CNN
+F 3 "" H 1850 1850 50  0001 C CNN
+	1    1850 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1800 1850 1800
+Wire Wire Line
+	1850 1800 1850 1850
+Text Label 3200 1700 0    50   ~ 0
+VIN_CTRL
+Text Label 3950 5050 0    50   ~ 0
+VIN_PWR
+$Comp
+L Connector:Conn_01x04_Female J208
+U 1 1 6218F6B5
+P 1750 5600
+F 0 "J208" H 1642 5885 50  0000 C CNN
+F 1 "Conn_01x04_Female" H 1642 5794 50  0000 C CNN
+F 2 "wbraun_smd:Terminal-block-plug_4x1_3.5mm-pitch" H 1750 5600 50  0001 C CNN
+F 3 "~" H 1750 5600 50  0001 C CNN
+F 4 "0395021004" H 1750 5600 50  0001 C CNN "MPN"
+	1    1750 5600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1950 5400 2150 5400
+Wire Wire Line
+	1950 5500 2150 5500
+Wire Wire Line
+	2150 5500 2150 5400
+Connection ~ 2150 5400
+Wire Wire Line
+	2150 5400 3050 5400
+$Comp
+L power:GND #PWR0236
+U 1 1 62194784
+P 2150 5750
+F 0 "#PWR0236" H 2150 5500 50  0001 C CNN
+F 1 "GND" H 2155 5577 50  0000 C CNN
+F 2 "" H 2150 5750 50  0001 C CNN
+F 3 "" H 2150 5750 50  0001 C CNN
+	1    2150 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5600 2150 5600
+Wire Wire Line
+	2150 5600 2150 5700
+Wire Wire Line
+	1950 5700 2150 5700
+Connection ~ 2150 5700
+Wire Wire Line
+	2150 5700 2150 5750
+$Comp
+L Connector:TestPoint TP202
+U 1 1 6244670A
+P 6500 1350
+F 0 "TP202" H 6558 1468 50  0000 L CNN
+F 1 "TestPoint" H 6558 1377 50  0000 L CNN
+F 2 "wbraun_smd:THM_COMPACT" H 6700 1350 50  0001 C CNN
+F 3 "~" H 6700 1350 50  0001 C CNN
+	1    6500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP203
+U 1 1 62447E34
+P 6650 5150
+F 0 "TP203" H 6708 5268 50  0000 L CNN
+F 1 "TestPoint" H 6708 5177 50  0000 L CNN
+F 2 "wbraun_smd:THM_COMPACT" H 6850 5150 50  0001 C CNN
+F 3 "~" H 6850 5150 50  0001 C CNN
+	1    6650 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP201
+U 1 1 62449469
+P 4700 5300
+F 0 "TP201" H 4758 5418 50  0000 L CNN
+F 1 "TestPoint" H 4758 5327 50  0000 L CNN
+F 2 "wbraun_smd:THM_COMPACT" H 4900 5300 50  0001 C CNN
+F 3 "~" H 4900 5300 50  0001 C CNN
+	1    4700 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 5300 4700 5400
+Connection ~ 4700 5400
+Wire Wire Line
+	4700 5400 4800 5400
+Wire Wire Line
+	6650 5150 6650 5350
+Connection ~ 6650 5350
+Wire Wire Line
+	6650 5350 6750 5350
+Wire Wire Line
+	6500 1350 6500 1700
+Connection ~ 6500 1700
+Wire Wire Line
+	6500 1700 6650 1700
 $EndSCHEMATC
