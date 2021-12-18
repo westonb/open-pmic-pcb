@@ -123,8 +123,6 @@ Wire Wire Line
 Wire Wire Line
 	3650 3200 3650 3600
 Wire Wire Line
-	3650 3600 3900 3600
-Wire Wire Line
 	4000 2800 3650 2800
 Wire Wire Line
 	3650 2800 3650 3200
@@ -171,11 +169,6 @@ Wire Wire Line
 	3100 4650 3100 4700
 Wire Wire Line
 	3100 4200 3100 4250
-Wire Wire Line
-	3550 4650 3550 3800
-Wire Wire Line
-	3550 3800 3900 3800
-Connection ~ 3550 4650
 Text Label 3550 4650 0    50   ~ 0
 TIA_VREF
 $Comp
@@ -247,7 +240,6 @@ Wire Wire Line
 	5400 3950 5400 3800
 Wire Wire Line
 	3650 3600 3200 3600
-Connection ~ 3650 3600
 Text Label 4950 3700 0    50   ~ 0
 TIA_SENSE
 Text GLabel 3200 3600 0    50   Input ~ 0
@@ -315,4 +307,18 @@ F 3 "" H 1650 4200 50  0001 C CNN
 $EndComp
 Text Label 4350 4000 0    50   ~ 0
 TIA_3V3
+Wire Wire Line
+	3650 3600 3650 3800
+Wire Wire Line
+	3650 3800 3900 3800
+Connection ~ 3650 3600
+Wire Wire Line
+	3550 4650 3550 4050
+Wire Wire Line
+	3550 4050 3800 4050
+Wire Wire Line
+	3800 4050 3800 3600
+Wire Wire Line
+	3800 3600 3900 3600
+Connection ~ 3550 4650
 $EndSCHEMATC

@@ -3568,4 +3568,92 @@ Wire Wire Line
 Connection ~ 11950 5800
 Wire Wire Line
 	11950 5800 11950 5500
+$Comp
+L Connector:TestPoint TP107
+U 1 1 61C0F9EF
+P 3100 7550
+F 0 "TP107" H 3158 7668 50  0000 L CNN
+F 1 "TestPoint" H 3158 7577 50  0000 L CNN
+F 2 "wbraun_smd:THM_COMPACT" H 3300 7550 50  0001 C CNN
+F 3 "~" H 3300 7550 50  0001 C CNN
+	1    3100 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP109
+U 1 1 61C10B95
+P 3800 7550
+F 0 "TP109" H 3858 7668 50  0000 L CNN
+F 1 "TestPoint" H 3858 7577 50  0000 L CNN
+F 2 "wbraun_smd:THM_COMPACT" H 4000 7550 50  0001 C CNN
+F 3 "~" H 4000 7550 50  0001 C CNN
+	1    3800 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP108
+U 1 1 61C38F9B
+P 3100 8050
+F 0 "TP108" H 3158 8168 50  0000 L CNN
+F 1 "TestPoint" H 3158 8077 50  0000 L CNN
+F 2 "wbraun_smd:THM_COMPACT" H 3300 8050 50  0001 C CNN
+F 3 "~" H 3300 8050 50  0001 C CNN
+	1    3100 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP110
+U 1 1 61C392C2
+P 3800 8050
+F 0 "TP110" H 3858 8168 50  0000 L CNN
+F 1 "TestPoint" H 3858 8077 50  0000 L CNN
+F 2 "wbraun_smd:THM_COMPACT" H 4000 8050 50  0001 C CNN
+F 3 "~" H 4000 8050 50  0001 C CNN
+	1    3800 8050
+	1    0    0    -1  
+$EndComp
+Text Label 3100 7650 0    50   ~ 0
+nmos_val
+Text Label 3800 7650 0    50   ~ 0
+pmos_val
+Text Label 3100 8150 0    50   ~ 0
+timeout_ext
+Text GLabel 3800 8150 2    50   Input ~ 0
+LOAD_SW
+Wire Wire Line
+	3800 8150 3800 8050
+Wire Wire Line
+	3100 8150 3100 8050
+Wire Wire Line
+	3100 7650 3100 7550
+Wire Wire Line
+	3800 7650 3800 7550
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61CFBA11
+P 3550 8700
+AR Path="/61A0E07B/61CFBA11" Ref="TP?"  Part="1" 
+AR Path="/61CFBA11" Ref="TP111"  Part="1" 
+F 0 "TP111" H 3608 8818 50  0000 L CNN
+F 1 "TestPoint" H 3608 8727 50  0000 L CNN
+F 2 "wbraun_smd:THM_COMPACT" H 3750 8700 50  0001 C CNN
+F 3 "~" H 3750 8700 50  0001 C CNN
+	1    3550 8700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61CFBA17
+P 3550 8750
+AR Path="/61A0E07B/61CFBA17" Ref="#PWR?"  Part="1" 
+AR Path="/61CFBA17" Ref="#PWR0188"  Part="1" 
+F 0 "#PWR0188" H 3550 8500 50  0001 C CNN
+F 1 "GND" H 3555 8577 50  0000 C CNN
+F 2 "" H 3550 8750 50  0001 C CNN
+F 3 "" H 3550 8750 50  0001 C CNN
+	1    3550 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 8750 3550 8700
 $EndSCHEMATC
