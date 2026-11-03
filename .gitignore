@@ -1,0 +1,49 @@
+# LTspice generated netlists, waveforms, and logs
+/sims/*.net
+/sims/*.raw
+/sims/*.log
+/ldmos-sim/*.net
+/ldmos-sim/*.raw
+/ldmos-sim/*.log
+
+# KiCad backups, autosaves, local state, and caches
+*.bak
+*.kicad_pcb-bak
+*.sch-bak
+*-backups/
+_autosave-*
+\#auto_saved_files#
+*.kicad_prl
+fp-info-cache
+*.lck
+.~lock.*#
+
+# Fabrication exports and archives
+*_[Gg]erbers/
+*-[Gg]erbers/
+gerbers/
+*.gbr
+*.gbrjob
+*.drl
+*-drl.rpt
+*.zip
+
+# Firmware build products
+/firmware/**/*.elf
+/firmware/**/*.hex
+/firmware/**/*.bin
+/firmware/**/*.o
+/firmware/**/*.lst
+/firmware/**/*.list
+/firmware/**/*.vvp
+/firmware/**/*.vcd
+
+# Generated test plots; keep measurement screenshots and CSV inputs
+/testing/eff1.png
+/testing/eff_compare.png
+/testing/load_line.png
+
+# Session files and Python caches
+octave-workspace
+__pycache__/
+*.py[cod]
